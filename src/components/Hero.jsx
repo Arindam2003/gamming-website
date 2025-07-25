@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Hero = () => {
+const Hero = ({ videoRef }) => {
     return (
         <main className='relative w-full h-screen overflow-hidden flex justify-center mb-[10%]'>
             <video src="video/hero.mp4"
+                ref={videoRef}
                 autoPlay
                 loop
                 muted

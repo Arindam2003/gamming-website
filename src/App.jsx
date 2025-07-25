@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Arena from './components/Arena'
 import Charecter from './components/Charecter'
 import Footer from './components/Footer'
@@ -10,19 +10,41 @@ import LoadingScreen from './components/LoadingScreen'
 function App() {
 
   const [isLoading, setIsLoading] = useState(true);
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    const handleLoad = () => setIsLoading(false);
-    window.addEventListener('load', handleLoad);
-    return () => window.removeEventListener('load', handleLoad);
+    const videoElement = videoRef.current;
+
+    const handleVideoReady = () => {
+      setTimeout(() => {
+        setIsLoading(false); // smooth fade after video is ready
+      }, 300);
+    };
+
+    // Attach event listener if video exists
+    if (videoElement) {
+      videoElement.addEventListener('canplaythrough', handleVideoReady);
+    }
+
+    // Fallback timeout if video takes too long or fails
+    const fallbackTimeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 8000);
+
+    return () => {
+      if (videoElement) {
+        videoElement.removeEventListener('canplaythrough', handleVideoReady);
+      }
+      clearTimeout(fallbackTimeout);
+    };
   }, []);
 
-  if (isLoading) return <LoadingScreen />;
 
   return (
     <>
+      {isLoading && <LoadingScreen />}
       <Header/>
-      <Hero/>
+      <Hero videoRef={videoRef}/>
       <Charecter/>
       <Arena/>
       <Footer/>
