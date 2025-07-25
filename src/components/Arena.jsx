@@ -34,7 +34,7 @@ const Arena = () => {
                     {/* card-2  */}
 
                     <div className='relative overflow-hidden rounded-3xl border border-white aspect-[4.5/4] transform transition-transform duration-300 hover:scale-105'>
-                        <video autoPlay loop muted playsInline className='w-full h-full object-cover' src="public/video/bento-card2.mp4"></video>
+                        <video autoPlay loop muted playsInline className='w-full h-full object-cover' src="video/bento-card2.mp4"></video>
                     </div>
                 </div>
 
@@ -45,19 +45,19 @@ const Arena = () => {
                     <div className='grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6'>
                         {/* card-3  */}
                         <div className='relative overflow-hidden border border-white rounded-3xl aspect-square transform transition-transform duration-300 hover:scale-105'>
-                            <video className='w-full h-full object-cover' autoPlay loop muted playsInline src="public/video/bento-card3.mp4"></video>
+                            <video className='w-full h-full object-cover' autoPlay loop muted playsInline src="video/bento-card3.mp4"></video>
                             <h1 className='absolute bottom-2 left-1/2 transform -translate-x-1/2 z-10 font-extrabold text-2xl'>Scoriox</h1>
                         </div>
 
                         {/* card-4  */}
                         <div className='relative overflow-hidden border border-white rounded-3xl aspect-square transform transition-transform duration-300 hover:scale-105'>
-                            <video className='w-full h-full object-cover' autoPlay loop muted playsInline src="public/video/bento-card4.mp4"></video>
+                            <video className='w-full h-full object-cover' autoPlay loop muted playsInline src="video/bento-card4.mp4"></video>
                             <h1 className='absolute bottom-2 left-1/2 transform -translate-x-1/2 z-10 font-extrabold text-2xl'>Floralynx</h1>
                         </div>
 
                         {/* card-5  */}
                         <div className='relative overflow-hidden border border-white rounded-3xl aspect-square transform transition-transform duration-300 hover:scale-105'>
-                            <video className='w-full h-full object-cover' autoPlay loop muted playsInline src="public/video/bento-card5.mp4"></video>
+                            <video className='w-full h-full object-cover' autoPlay loop muted playsInline src="video/bento-card5.mp4"></video>
                             <h1 className='absolute bottom-2 left-1/2 transform -translate-x-1/2 z-10 font-extrabold text-2xl'>Titanor</h1>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ const Arena = () => {
                     {/* card-6 */}
 
                     <div className='relative overflow-hidden rounded-3xl border border-white aspect-[16/9] md:col-span-2 transform transition-transform duration-300 hover:scale-[1.02]'>
-                        <img src="public/images/bento-card5.png" alt="" />
+                        <img src="images/bento-card5.png" alt="" />
 
                         <button className='absolute bottom-0 h-16 w-full bg-black bg-opacity-70 text-2xl font-bold hover:text-yellow-400 transition-all duration-300 text-nowrap'>
                             <i className='bx bx-link-external'></i>
