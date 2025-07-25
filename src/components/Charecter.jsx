@@ -102,7 +102,7 @@ const Charecter = () => {
 
             {/* main section */}
 
-            <div className='relative z-10 flex flex-col md:flex-row items-center w-full  p-4 h-180 md:h-full'>
+            <div className='relative z-10 flex flex-col md:flex-row items-center w-full  p-4 h-215 md:h-full'>
 
                 {/* left side */}
 
@@ -244,7 +244,7 @@ const Charecter = () => {
 
 
                 {/* right side  3d */}
-                <div className='relative z-10 md:w-2/4 w-full h-180 md:h-full flex items-center justify-center overflow-hidden '
+                <div className='relative z-10 md:w-2/4 w-full h-250 md:h-full flex items-center justify-center overflow-hidden'
                     onMouseEnter={handle3DAreaMouseEnter}
                     onMouseLeave={handle3DAreaMouseLeave}
                 >

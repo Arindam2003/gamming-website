@@ -10,9 +10,9 @@ const Footer = () => {
 
             <div className='flex gap-4'>
 
-                <a href="https://www.linkedin.com/in/arindam-dinda-01b652284/" className='md:text-3xl text-2xl hover:text-violet-600 duration-300'><i className='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.linkedin.com/in/arindam-dinda-01b652284/" className='md:text-3xl text-2xl hover:text-violet-600 duration-300' target="_blank"><i className='bx bxl-linkedin' ></i></a>
 
-                <a href="https://github.com/Arindam2003" className='md:text-3xl text-2xl hover:text-violet-600 duration-300'><i className='bx bxl-github' ></i></a>
+                    <a href="https://github.com/Arindam2003" className='md:text-3xl text-2xl hover:text-violet-600 duration-300' target="_blank"><i className='bx bxl-github' ></i></a>
             </div>
             
         </footer>
